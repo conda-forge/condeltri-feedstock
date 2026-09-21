@@ -1,5 +1,5 @@
 {% set name = "condeltri" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/condeltri-{{ version }}.tar.gz
-  sha256: eaa0510730c23bf3fff25da389a0959839f552f729737179ec8eb74e0d0dacdb
+  sha256: 358abc8be3de732013b729a9c5d97b9cd227591ffdc1b5c7fd79bdecb507407b
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
